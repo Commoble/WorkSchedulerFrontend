@@ -1,1 +1,86 @@
+<<<<<<< Updated upstream
 <p>loginscreen works!</p>
+=======
+<head>
+    <style>
+        .grid-container {
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: auto auto auto;
+        background-color: #F1ACE8;
+        padding: 10px;
+    }
+  
+  .grid-item {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet2" href="login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<!-- <p>Work Scheduling Login:</p> -->
+<div>
+    <!-- <label for="username-input">Username:</label> -->
+    <!-- <input type='text' placeholder='Username' [(ngModel)]='username' name='username' (keydown.enter)='login()' #usernameInput autofocus/> -->
+</div>
+<div>
+    <!-- <label for="password-input">Password:</label> -->
+    <!-- <input type='password' placeholder='Password' [(ngModel)]='password' name='password' (keydown.enter)='login()'/> -->
+</div>
+<!-- <div>
+    <button (click)='login()'>Log In</button>
+</div>
+<div class='invalid-login-prompt' *ngIf='showInvalidLoginPrompt'>
+    <p>Could not log in; invalid username and/or password.</p>
+</div> -->
+
+    <div class="grid-container" id = "login">
+        <div class="grid-item"></div>
+        <div class="grid-item">
+            <p><br>Donut Work Scheduler Login:</p>
+        </div>
+        <div class="grid-item">
+            <img src = "sprinklesDonut.png" style="width:350px;">
+        </div>  
+        <div class="grid-item"></div>
+        <div  class="grid-item" style="background-color:#F8B170; border-radius: 20px;">
+            <br>
+            <label for="user-input" width:25px;>Username:</label>
+            <!-- <input type="text" id="usr" width="150px" style="border-radius: 10px;"> -->
+            <input type='text' placeholder='Username' [(ngModel)]='username' name='username' (keydown.enter)='login()' #usernameInput autofocus/>
+
+            <br><br>
+            <label for="password-input" width="200px">Password:</label>
+            <!-- <input type="password" id="pwd" width="200px" height=200px style="border-radius: 10px;"> -->
+            <input type='password' placeholder='Password' [(ngModel)]='password' name='password' (keydown.enter)='login()'/>
+            <br>
+            <a style = "font-size: 14px;">Forgot Username?</a> <a style = "font-size: 14px;">Forgot Password?</a><br><a style = "font-size: 13px;">New User</a>
+        </div>
+        <div class="grid-item"></div>  
+        <div class="grid-item">            
+            <img src = "twoDonuts.png" style="width:450px;">
+        </div>
+        <div class="grid-item">
+            <div>
+                <button (click)='login()'>Log In</button>
+            </div>
+            <div class='invalid-login-prompt' *ngIf='showInvalidLoginPrompt'>
+                <p>Could not log in; invalid username and/or password.</p>
+            </div>
+        <!-- <button style="font-size: 23px;" onclick="login()">
+            Submit
+        </button></div> -->
+        <div class="grid-item"></div>  
+    </div>
+
+    
+>>>>>>> Stashed changes

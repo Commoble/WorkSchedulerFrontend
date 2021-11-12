@@ -1,0 +1,97 @@
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<div>
+    <label for="start">Start Time</label>
+    <input type='text' placeholder='start' name='start'/>
+</div>
+<div>
+    <label for="end">End Time:</label>
+    <input type='text' placeholder='end' name='end'/>
+</div>
+<div>
+    <label for="weekday">Day of the week</label>
+    <input type='int' placeholder='weekday' name='weekday'/>
+
+
+    <!-- <div>
+        <input *ngFor="let ch of checkboxes" [(ngModel)]="ch.selected" type="checkbox" value={{ch.value}} id={{ch.value}}  name="num">
+    </div> -->
+    
+    
+    <!-- <div>
+        <label for="weekday-1"><input type="checkbox" name="weekday" [(ngModel)] = "Sunday" id="weekday-1" />Sunday</label>
+    
+        <label for="weekday-2"><input type="checkbox" name="weekday" [(ngModel)] = "Monday" id="weekday-2" /> Monday</label>
+    
+        <label for="weekday-3"><input type="checkbox" name="weekday" [(ngModel)] = "Tuesday" id="weekday-3" />Tuesday</label>
+    
+        <label for="weekday-4"><input type="checkbox" name="weekday" [(ngModel)] = "Wednesday" id="weekday-4" />Wednesday</label>
+    
+        <label for="weekday-5"><input type="checkbox" name="weekday" [(ngModel)] = "Thursday" id="weekday-5" />Thursday</label>
+    
+        <label for="weekday-6"><input type="checkbox" name="weekday" [(ngModel)] = "Friday" id="weekday-6" />Friday</label>
+    
+        <label for="weekday-7"><input type="checkbox" name="weekday" [(ngModel)] = "Saturday" id="weekday-7" />Saturday</label>
+    </div>
+    <button (click)="getSelected()">Submit</button> -->
+    <div ng-app="myApp" ng-controller="formCtrl">
+    <!-- <div>
+        <label for="weekday-1"><input type="checkbox" name="weekday" [(ngModel)] = "Sunday" id="weekday-1" />Sunday</label>
+    
+        <label for="weekday-2"><input type="checkbox" name="weekday" [(ngModel)] = "Monday" id="weekday-2" /> Monday</label>
+    
+        <label for="weekday-3"><input type="checkbox" name="weekday" [(ngModel)] = "Tuesday" id="weekday-3" />Tuesday</label>
+    
+        <label for="weekday-4"><input type="checkbox" name="weekday" [(ngModel)] = "Wednesday" id="weekday-4" />Wednesday</label>
+    
+        <label for="weekday-5"><input type="checkbox" name="weekday" [(ngModel)] = "Thursday" id="weekday-5" />Thursday</label>
+    
+        <label for="weekday-6"><input type="checkbox" name="weekday" [(ngModel)] = "Friday" id="weekday-6" />Friday</label>
+    
+        <label for="weekday-7"><input type="checkbox" name="weekday" [(ngModel)] = "Saturday" id="weekday-7" />Saturday</label>
+    </div>
+    <button (click)="getSelected()">Submit</button> -->
+    <table class = "table">
+        <thead>
+            <tr>
+                <th *ngFor="let n of weekdays"></th>
+                <td>{{n.name}}</td>
+                <!-- <th scope="col">Sunday</th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+                <th scope="col">Saturday</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope = "row">
+                    <input type="checkbox">
+                </th>
+                <!-- <th scope = "row">
+                    <input type="checkbox">
+                </th>
+                <th scope = "row">
+                    <input type="checkbox">
+                </th>
+                <th scope = "row">
+                    <input type="checkbox">
+                </th>
+                <th scope = "row">
+                    <input type="checkbox">
+                </th>
+                <th scope = "row">
+                    <input type="checkbox">
+                </th>
+                <th scope = "row">
+                    <input type="checkbox">
+                </th> -->
+            </tr>
+        </tbody>
+    </table>
+
+
+      </div>  
+</div>
