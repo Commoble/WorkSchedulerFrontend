@@ -12,7 +12,6 @@ export interface Cartoon {
   styleUrls: ['./set-availability.component.css']
 })
 
-
 export class SetAvailabilityComponent implements OnInit {
   // days:any;
   
@@ -78,6 +77,4 @@ export class SetAvailabilityComponent implements OnInit {
     submit() {
       console.log(this.form.value.name);
     }
- 
-
 }

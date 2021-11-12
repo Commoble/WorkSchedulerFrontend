@@ -1,18 +1,36 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginscreenComponent } from './components/loginscreen/loginscreen.component';
+import { DashBoardScreenComponent } from './components/dash-board-screen/dash-board-screen.component';
+import { ViewScheduleComponent } from './components/view-schedule/view-schedule.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { SetAvailabilityComponent } from './components/set-availability/set-availability.component';
+import { TimeOffComponent } from './components/time-off/time-off.component';
+import { ApprovedPipePipe } from './pipes/approved-pipe.pipe';
+import { ApTimeOffComponent } from './components/ap-time-off/ap-time-off.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginscreenComponent
+    LoginscreenComponent,
+    DashBoardScreenComponent,
+    ViewScheduleComponent,
+    LogoutComponent,
+    SetAvailabilityComponent,
+    TimeOffComponent,
+    ApprovedPipePipe,
+    ApTimeOffComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
