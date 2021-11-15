@@ -54,7 +54,7 @@ export class TimeOffComponent implements OnInit {
       const pendingResponse = this.httpClient.post<TimeOffRequest[]>("http://localhost:8080/timeoff", timeRequest,{headers:headers});
       
       pendingResponse.subscribe(
-        (response)=>{let nonsense=alert("Request Submitted!"); this.app.currentScreen = 'app-dash-board-screen'}
+        (response)=>{let nonsense=alert("Request Submitted!"); this.getMyRequests()}
       );
     }
   }
